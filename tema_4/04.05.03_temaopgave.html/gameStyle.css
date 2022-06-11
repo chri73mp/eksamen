@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+}
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+audio {
+  display: none;
+}
+
+#start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(spil_svg/forside.svg);
+  z-index: 50;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#game_over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(spil_svg/game-over.svg);
+  background-size: cover;
+  z-index: 50;
+}
+
+#level_complete {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil_svg/vinder.svg);
+  background-size: cover;
+  z-index: 50;
+}
+
+#winText {
+  position: absolute;
+  top: 45%;
+  width: 72%;
+  left: 15%;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-style: italic;
+}
+#loseText {
+  position: absolute;
+  top: 42%;
+  width: 45%;
+  left: 30%;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-style: italic;
+}
+
+#start_knap {
+  width: 8%;
+  height: 91%;
+  position: absolute;
+  top: 0%;
+  left: 46%;
+  background-size: cover;
+}
+
+#genstart_knap,
+#genstart_knap2 {
+  width: 10%;
+  height: 135%;
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  background-size: cover;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(spil_svg/baggrund.svg);
+  background-size: cover;
+}
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+/* spil elementer */
+
+#henry_container {
+  width: 17%;
+  aspect-ratio: 50/43;
+  position: absolute;
+  top: 32%;
+  left: 17%;
+}
+
+#henry_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil_svg/henry.svg);
+  background-size: cover;
+}
+
+#dronning_container {
+  width: 14%;
+  aspect-ratio: 5/6;
+}
+
+#dronning_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil_svg/dronning.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#pave_container {
+  width: 11%;
+  aspect-ratio: 3/8;
+  position: absolute;
+  top: 13%;
+  left: 7%;
+}
+
+#pave_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil_svg/pave.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#baby_container {
+  width: 9%;
+  aspect-ratio: 6/11;
+}
+
+#baby_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(spil_svg/baby.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ui-elementer */
+#score_board {
+  width: 6%;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  font-family: monospace;
+  font-style: italic;
+  color: rgb(201, 12, 12);
+  background-size: cover;
+}
+#time_container {
+  position: absolute;
+  width: 1%;
+  height: 15%;
+  top: 3%;
+  left: 96%;
+  border: 0.3vw solid gold;
+}
+
+#time_sprite {
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 100%;
+  background-color: rgb(240, 49, 49);
+}
+
+.time {
+  animation-name: time_kf;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes time_kf {
+  0% {
+    transform: scaleY(1);
+    background-color: rgb(240, 49, 49);
+  }
+
+  50% {
+    transform: scaleY(0.5);
+    background-color: rgb(148, 23, 23);
+  }
+
+  100% {
+    transform: scaleY(0);
+    background-color: rgb(63, 4, 4);
+  }
+}
+.life_board {
+  width: 3%;
+  aspect-ratio: 11/13;
+  position: absolute;
+  top: 2%;
+  background-image: url(spil_svg/liv.svg);
+  background-size: cover;
+}
+
+#liv1 {
+  left: 11%;
+}
+
+#liv2 {
+  left: 16%;
+}
+
+#liv3 {
+  left: 21%;
+}
+
+#game_ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* ANIMATIONER */
+
+.flyv {
+  animation-name: flyv_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.flyv2 {
+  animation-name: flyv_kf_rev;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes flyv_kf {
+  100% {
+    transform: translateX(-120vw);
+  }
+}
+
+@keyframes flyv_kf_rev {
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

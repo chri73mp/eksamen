@@ -1,0 +1,40 @@
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+
+/* Størrelsesdefinition for at øge kompatabilitet */
+img {
+  object-fit: fill;
+  align-self: stretch;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Audiowide", cursive;
+  border: 10px;
+  padding: px;
+  margin: 20px;
+  font-size: 83px;
+  color: #336898;
+}
+
+h2 {
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Fællesregler for alle classes der starter med "grid" */
+div[class^="grid"] {
+  display: grid;
+  gap: 20px;
+}
+
+footer {
+  text-align: center;
+}

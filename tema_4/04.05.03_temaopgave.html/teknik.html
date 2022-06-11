@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Teknik</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"> Home</a>
+        </li>
+        <li>
+          <a href="spil.html"> Spillet</a>
+        </li>
+        <li>
+          <a href="ide.html"> Ide</a>
+        </li>
+        <li>
+          <a href="teknik.html" class="active"> Teknik</a>
+        </li>
+        <li>
+          <a href="grafik.html"> Design</a>
+        </li>
+        <li>
+          <a href="assets.html"> Assets</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Diagrammer</h1>
+    <p>Hover for at udvide.<br>Klik for at gå til full-size udgave</p>
+
+    <div class="float-container">
+      <div class="float-child">
+        <h2>State Machine Diagram</h2>
+        <img class="diagram" src="state-machine-diagram.png" alt="State Machine Diagram"
+          onclick="window.open(this.src)" />
+      </div>
+      <div class="float-child">
+        <h2>Aktivitetsdiagram</h2>
+        <img class="diagram" src="aktivitetsdiagram.png" alt="Aktivitetsdiagram" onclick="window.open(this.src)" />
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

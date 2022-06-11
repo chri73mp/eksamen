@@ -1,0 +1,98 @@
+/* Fællesregler for menu*/
+
+nav {
+  font-family: Tahoma, sans-serif;
+  background-color: darkred;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:not(.active) {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(4, 70, 4);
+
+  top: +4px;
+}
+
+.active {
+  background-color: rgb(4, 70, 4);
+}
+
+.active:hover {
+  color: white;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin: 0px 0px 20px 0px;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: oblique;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.diagram {
+  width: 80%;
+  position: relative;
+  top: 0;
+}
+
+.diagram:hover {
+  width: 60%;
+  background-color: white;
+  z-index: 200;
+  top: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

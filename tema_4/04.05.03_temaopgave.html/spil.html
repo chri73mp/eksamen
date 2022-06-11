@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spil</title>
+  <link rel="stylesheet" href="gameStyle.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"> Home</a>
+        </li>
+        <li>
+          <a href="spil.html" class="active"> Spillet</a>
+        </li>
+        <li>
+          <a href="ide.html"> Ide</a>
+        </li>
+        <li>
+          <a href="teknik.html"> Teknik</a>
+        </li>
+        <li>
+          <a href="grafik.html"> Design</a>
+        </li>
+        <li>
+          <a href="assets.html"> Assets</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="screen">
+    <div id="game" class="hide">
+      <div id="game_background"></div>
+      <div id="game_elements">
+        <div id="henry_container">
+          <div id="henry_sprite"></div>
+        </div>
+        <div id="dronning_container">
+          <div id="dronning_sprite"></div>
+        </div>
+        <div id="pave_container">
+          <div id="pave_sprite"></div>
+        </div>
+        <div id="baby_container">
+          <div id="baby_sprite"></div>
+        </div>
+
+      </div>
+      <div id="game_ui">
+        <div id=score_board></div>
+        <div id="time_board">
+          <div id="time_container">
+            <div id="time_sprite" class="time"></div>
+          </div>
+        </div>
+        <div id="liv1" class="life_board"></div>
+        <div id="liv2" class="life_board"></div>
+        <div id="liv3" class="life_board"></div>
+      </div>
+    </div>
+    <div id="start">
+      <img src="spil_svg/knap.svg" id="start_knap" width="300" height="200">
+    </div>
+    <div id="game_over">
+      <img src="spil_svg/genstart-knap.svg" id="genstart_knap" width="300" height="200">
+      <p id="loseText"></p>
+    </div>
+    <div id="level_complete">
+      <img src="spil_svg/genstart-knap.svg" id="genstart_knap2" width="300" height="200">
+      <p id="winText"></p>
+    </div>
+
+    <div id="sounds">
+      <audio src="sounds/baby1.mp3" id="sound_baby1" controls></audio>
+      <audio src="sounds/baby2.mp3" id="sound_baby2" controls></audio>
+      <audio src="sounds/dronning1.mp3" id="sound_dronning1" controls></audio>
+      <audio src="sounds/dronning2.mp3" id="sound_dronning2" controls></audio>
+      <audio src="sounds/pave1.mp3" id="sound_pave1" controls></audio>
+      <audio src="sounds/pave-jesus.mp3" id="sound_pave_jesus" controls></audio>
+      <audio src="sounds/taber.mp3" id="sound_taber" controls></audio>
+      <audio src="sounds/vinder.mp3" id="sound_vinder" controls></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

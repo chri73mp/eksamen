@@ -1,0 +1,105 @@
+/* Layout til desktop */
+@media (min-width: 600px) {
+  main:not(.home) {
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    align-self: center;
+  }
+
+  main {
+    background-color: white;
+    margin: 0;
+    padding: 20px 16px 20px 16px;
+    border-radius: 5%;
+    margin-top: 20px !important;
+  }
+
+  body {
+    background-color: darkred;
+    margin: 0;
+  }
+  .grid_3-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+  }
+
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 200px auto;
+    gap: 20px;
+  }
+
+  .grid_2-2 > .assettitle {
+    margin: auto;
+    text-align: center;
+  }
+
+  .grid_2-2 > .asset > img {
+    align-items: center;
+    border-width: 4px;
+    border-style: solid;
+    padding: 12px;
+    width: 200px;
+  }
+}
+
+/* Mobile layout */
+@media (min-width: 600px) {
+}
+/* Billeder forside */
+
+#forside_1 {
+  width: 500px;
+}
+#forside_2 {
+  width: 500px;
+}
+
+#forside_3 {
+  width: 300px;
+}
+#forside_4 {
+  width: 250px;
+}
+#forside_5 {
+  width: 400px;
+}
+
+/* Menu for mobil layout */
+@media (max-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    overflow-x: auto;
+    gap: 40px;
+    width: 80%;
+  }
+}
+
+/* Menu layout for desktop */
+@media (min-width: 600px) {
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
+}
+
+.float-container {
+  padding: 20px;
+  text-align: center;
+  height: 400px !important;
+}
+
+.float-child {
+  width: 45%;
+  float: left;
+  padding: 20px;
+}
