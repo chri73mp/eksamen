@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A Basic HTML5 Template</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id="sun"></div>
+    <div id="sky1"></div>
+    <div id="sky2"></div>
+    <div id="background">
+    <header>
+        <!-- Desktop mobile header start -->
+        <div id="desktop_header">
+            <div class="title">
+                <h1>Christine Düring</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Om mig</a>
+                    </li>
+                    <li>
+                        <a href="vaerker.html">UX</a>
+                    </li>
+                    <li>
+                        <a href="om.html">Animation</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">GI</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">V2</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Desktop mobile header end -->
+
+        <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+        <div id="mobil_header">
+            <div class="topnav">
+                <a class="active">
+                </a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">Om mig</a>
+                    <a href="vaerker.html">UX</a>
+                    <a href="om.html">Animation</a>
+                    <a href="kontakt.html">GI</a>
+                    <a href="kontakt.html">V2</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a class="icon" onclick="menuToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+    </header>
+
+
+    <div id="christine_figur"></div>
+    <div id="ellie_figur"></div>
+
+
+    <script src="index.js"></script>
+</div>
+</body>
+
+</html>
