@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex" />
+</head>
+
+<body>
+    <header>
+        <!-- Desktop mobile header start -->
+        <div id="desktop_header">
+            <div class="title">
+                <h1>Christine Düring</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Om mig</a>
+                    </li>
+                    <li>
+                        <a href="vaerker.html">UX</a>
+                    </li>
+                    <li>
+                        <a href="om.html">Animation</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">GI</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">V2</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Desktop mobile header end -->
+
+        <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+        <div id="mobil_header">
+            <div class="topnav">
+                <a class="active">
+                </a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">Om mig</a>
+                    <a href="vaerker.html">UX</a>
+                    <a href="om.html">Animation</a>
+                    <a href="kontakt.html">GI</a>
+                    <a href="kontakt.html">V2</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a class="icon" onclick="menuToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+    </header>
+    <main>
+        <div class="grid_1">
+            <div class="billede_1">
+                <figure>
+                    <img class="billede_christine_1" src="images/selvportraet.jpeg" alt="Christine Düring">
+                </figure>
+                <div class="tekst_1">
+                    <h2>OM MIG</h2>
+                    <h3>Christine Düring</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut faucibus pulvinar
+                        elementum. Vel fringilla est ullamcorper eget nulla.
+                        Volutpat commodo sed egestas egestas fringilla. Et ligula ullamcorper malesuada
+                        proin libero nunc. Fermentum leo vel orci porta non. Vestibulum sed arcu non odio
+                        euismod. Sapien faucibus et molestie ac feugiat sed lectus. Scelerisque varius morbi
+                        enim nunc faucibus a. Luctus venenatis lectus
+                        magna fringilla urna porttitor rhoncus. Elit ullamcorper dignissim cras tincidunt lobortis
+                        feugiat vivamus. Pulvinar pellentesque habitant morbi tristique senectus et netus et.
+                        Habitasse platea dictumst vestibulum rhoncus est pellentesque. N
+                        on blandit massa enim nec. Phasellus faucibus scelerisque eleifend
+                        donec pretium vulputate sapien nec.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_2">
+            <div class="tekst_2">
+                <h3>CV</h3>
+                <ul>
+                    <li>Stud.jur. Arbejdsskadestyrelsen</li>
+                    <li>Stud. jur. Ejendom Danmark</li>
+                    <li>Butiksassistent H&M</li>
+                </ul>
+            </div>
+            <div class="billede_christine_2">
+                <figure>
+                    <img class="billede_christine_1" src="images/selvportraet.jpeg" alt="Christine Düring">
+                </figure>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
