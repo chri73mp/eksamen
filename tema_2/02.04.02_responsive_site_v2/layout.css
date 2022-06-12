@@ -1,3 +1,19 @@
+/* Menu for mobil layout */
+@media (max-width: 600px) {
+  .homebutton {
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    overflow-x: auto;
+    gap: 40px;
+    width: 80%;
+  }
+}
+
 /* Menu layout for desktop */
 @media (min-width: 600px) {
   .ul {
@@ -9,16 +25,31 @@
     display: inline;
   }
 
+  nav li,
+  nav {
+    padding: 10px;
+  }
+
   .homebutton {
     margin-right: 20px;
   }
 }
 
-/* Menu layout for mobil */
-@media (max-width: 600px) {
-  .homebutton {
-    margin-bottom: 20px;
-  }
+/* Fællesregler for menu*/
+nav a:hover,
+nav button:hover {
+  color: lightskyblue;
+}
+
+nav {
+  background-color: orange;
+  font-family: Tahoma, sans-serif;
+}
+
+/* Fællesregler for alle classes der starter med "grid" */
+div[class^="grid"] {
+  display: grid;
+  gap: 20px;
 }
 
 /* Layout til desktop */

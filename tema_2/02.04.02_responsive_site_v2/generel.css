@@ -5,6 +5,61 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+}
+
+p {
+  max-width: 65ch;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+  text-align: center;
+  background-color: white;
+  background-color: RGBA(255, 255, 255, 0.8);
+  padding-top: 10px;
+}
+
+/* Initial adjusment of splash (no responsiveness) */
+.splash {
+  width: 100%;
+  background-image: url("./vg-billeder/splash_final.jpg");
+  background-repeat: no-repeat;
+}
+
+/* desktop layout */
+@media (min-width: 1000px) {
+  .splash {
+    background-position: 45vh;
+    background-size: 180vh;
+  }
+  h2 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+/* Tablet  portrait layout */
+@media (min-width: 600px) and (max-width: 1000px) {
+  .splash {
+    background-position: 10% 30vh;
+    background-size: 150vh;
+  }
+  .splash h1 {
+    padding-top: 50px;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .splash {
+    background-size: 121vh;
+    background-position: -8vh 38vh;
+  }
+}
+
 /* Størrelsesdefinition for at øge kompatabilitet */
 img {
   object-fit: fill;
@@ -12,29 +67,59 @@ img {
   width: 100%;
 }
 
+/* Tekst og font */
+@font-face {
+  font-family: lunchds;
+  src: url("./font/lunchds.woff2") format("woff2");
+}
+
+p,
+h4 {
+  font-family: Tahoma, sans-serif;
+  line-height: 1.5rem;
+}
+
+.textbox {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  background-color: RGBA(255, 255, 255, 0.8);
+  border-radius: 0px;
+}
+
 h1 {
-  font-family: "Audiowide", cursive;
+  font-family: "VT323", monospace;
   border: 10px;
-  padding: px;
-  margin: 20px;
-  font-size: 83px;
-  color: #336898;
+  font-size: 6rem;
+  color: orange;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 h2 {
+  font-family: "VT323", monospace;
+  border: 1px;
+  font-size: 3rem;
+  color: orange;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+h3 {
+  font-family: Tahoma, sans-serif;
+  border: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
 }
 
 main {
   margin: 0 auto;
   max-width: 1200px;
-}
-
-/* Fællesregler for alle classes der starter med "grid" */
-div[class^="grid"] {
-  display: grid;
-  gap: 20px;
-}
-
-footer {
-  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
