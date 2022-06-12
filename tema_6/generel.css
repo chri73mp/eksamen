@@ -1,0 +1,155 @@
+.ommiggrid {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "billede1 tekst1 tekst1"
+      "tekst2 tekst2 billede2"; 
+      margin: auto;
+      width: 50%;
+  }
+  .billede1 { grid-area: billede1; }
+  .tekst2 { grid-area: tekst2; }
+  .tekst1 { grid-area: tekst1; }
+  .billede2 { grid-area: billede2; }
+
+
+
+  /* MEDIA QUERY FOR DESKTOP: @media (min-width: 992px) */
+
+* {
+    all: unset;
+    display: revert;
+    cursor: revert;
+    box-sizing: border-box;
+  }
+  
+  /* menu */
+  
+  header nav li {
+    text-align: center;
+    /* border-bottom: 1px solid white;*/
+    width: 7rem;
+    padding: 0.2rem;
+    flex-shrink: 0;
+  }
+  
+  header {
+    display: grid;
+    justify-content: center;
+    position: static;
+    top: 0;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  header nav {
+    overflow-x: auto;
+  }
+  
+  
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    gap: 8px;
+  }
+  
+  a {
+    font-family: roboto;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(61, 60, 60);
+  }
+  
+  nav li {
+    background-color: lightcyan;
+  }
+  
+  li:hover {
+    background-color: rgb(245, 255, 255);
+    font-weight: 800;
+    transform: translate(0px, 2px);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  body {
+    background-color: white;
+  }
+
+  /* Mobil header style */
+  /* Skal kun aktivere på en vis width-size. Ellers default til desktop */
+  /* Adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+  /* Style the navigation menu */
+  @media (max-width: 992px) {
+ 
+  #mobil_header {
+    display: block;
+  }
+
+  #desktop_header {
+    display: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 100;
+    top: 0;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: white;
+  }
+
+  .icon {
+    font-size: 3em;
+  }
+
+  .active{
+      height:70px;
+      width: 100vw;
+  }
+}
+
+@media (min-width: 992px) {
+    #mobil_header {
+      display: none;
+    }
+  
+    #desktop_header {
+      display: block;
+    }
+  }

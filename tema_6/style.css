@@ -1,286 +1,174 @@
-/* MEDIA QUERY FOR DESKTOP: @media (min-width: 992px) */
+body {
+  background-color: #8acaf2 !important;
+  animation: dagnat 8s infinite;
+}
 
-* {
-    all: unset;
-    display: revert;
-    cursor: revert;
-    box-sizing: border-box;
-  }
-  /* menu */
-  
-  header nav li {
-    text-align: center;
-    /* border-bottom: 1px solid white;*/
-    width: 7rem;
-    padding: 0.2rem;
-    flex-shrink: 0;
-  }
-  
-  header {
-    display: grid;
-    justify-content: center;
-    position: static;
-    top: 0;
-    padding: 0.5rem 0.5rem;
-  }
-  header nav {
-    overflow-x: auto;
-  }
-  
-
-  
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 0.4rem;
-    gap: 8px;
-  }
-  a {
-    font-family: roboto;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: rgb(61, 60, 60);
+@keyframes dagnat {
+  0% {
+    background-color: #6a9bba;
   }
 
-  nav li {
-      background-color: lightcyan;
+  25% {
+    background-color: #74aacd;
   }
 
-  li:hover {
-    background-color: rgb(245, 255, 255);
-    font-weight: 800;
-    transform:translate(0px, 2px);
-  }
-  
-  .title{
-text-align: center;
-margin-bottom:24px;
-  }
-
-  h1{
-      font-size: 2em;
-  }
-
-  body{
-    background-size:125%;
-    background-position: center;
-    background-repeat: no-repeat;
+  50% {
     background-color: #8acaf2;
-    animation: dagnat 8s infinite;
   }
 
-  @keyframes dagnat {
-    0% {
-      background-color: #6a9bba;
-    }
-    25%{
-      background-color: #74aacd;
-    }
-    50%{
-      background-color: #8acaf2;
-    }
-    75%{
-      background-color: #79b1d3;
-    }
-    100% {
-      background-color: #6a9bba;
-    }
+  75% {
+    background-color: #79b1d3;
   }
 
-  #background{
-    position:absolute;
-    width: 100%; height: 100vh;
-    background-image: url("./images/baggrund_forside_01.png");
-    background-position: bottom;
-    z-index: 0;
+  100% {
+    background-color: #6a9bba;
   }
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/baggrund_forside_01.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 
 
-  #christine_figur{
-    background-image: url("./images/christine.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:10em;
-    height:30%;
-    position: absolute;
-    margin-top:20%;
-    margin-left:10%;
-  }
+#christine_figur {
+  background-image: url("./images/christine.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 30%;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 10%;
+}
 
-  #christine_figur:hover{
-    background-image: url("./images/christine-klik.svg");
-  }
+#christine_figur:hover {
+  background-image: url("./images/christine-klik.svg");
+}
 
-  #ellie_figur{
-    background-image: url("./images/ellie.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:8em;
-    height:20%;
-    position: absolute;
-    margin-top:25%;
-    margin-left:20%;
-  }
+#ellie_figur {
+  background-image: url("./images/ellie.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8em;
+  height: 20%;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 20%;
+}
 
-  #ellie_figur:hover{
-    background-image: url("./images/ellie-klik.svg");
-  }
-  
-  #sky1, #sky2{
-    background-image: url("./images/sky.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:400px;
-    height:500px;
-    position:absolute;
-    z-index: -1;
-    -webkit-animation: linear infinite;
-  }
+#ellie_figur:hover {
+  background-image: url("./images/ellie-klik.svg");
+}
 
-  #sky1{
-    -webkit-animation-name: sky1;
-    -webkit-animation-duration: 22s;
-    margin-top:25%;
-    margin-left:50%;
-  }
+#sky1, #sky2 {
+  background-image: url("./images/sky.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: linear infinite;
+}
 
-  #sky2{
-    -webkit-animation-name: sky2;
-    -webkit-animation-duration: 16s;
-    margin-top:25%;
-    margin-left:10%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
+#sky1 {
+  -webkit-animation-name: sky1;
+  -webkit-animation-duration: 22s;
+  margin-top: 25%;
+  margin-left: 50%;
+}
+
+#sky2 {
+  -webkit-animation-name: sky2;
+  -webkit-animation-duration: 16s;
+  margin-top: 25%;
+  margin-left: 10%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 /* Venstre højre anim taget fra: https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
-  @-webkit-keyframes sky1 {
-    0% {
-      left: 0;
-    }
-    50% {
-      left: 10%;
-    }
-    100% {
-      left: 0;    
-    }
+@-webkit-keyframes sky1 {
+  0% {
+    left: 0;
   }
 
-  @-webkit-keyframes sky2 {
-    0% {
-      left: 0;
-    }
-    50% {
-      left: 10%;
-    }
-    100% {
-      left: 0;    
-    }
-  }
-  
-  #sun{
-    background-image: url("./images/sol.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:16em;
-    height:40%;
-    position: absolute;
-    margin-top: 20%;
-    z-index: 0;
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: sol;
-    -webkit-animation-duration: 8s;
-  }
-  
-  /* bue-animation taget fra: https://codepen.io/kaista/pen/pLKRev */
-  @-webkit-keyframes sol {
-    0% {
-      left: -15%;
-    }
-    25%{
-      transform: translate(-40%, -40%);
-    }
-    50%{
-      transform: translate(-50%, -50%);
-    }
-    75%{
-      transform: translate(-40%, -40%);
-    }
-    100% {
-      left: 100%;
-      transform: translate(0%, 0%);
-    }
+  50% {
+    left: 10%;
   }
 
-  @media (min-width: 992px) {
-    #mobil_header {
-      display: none;
-    }
-    #desktop_header {
-      display: block;
-    }
+  100% {
+    left: 0;
   }
-  
-  /* Mobil header style */
-  /* Skal kun aktivere på en vis width-size. Ellers default til desktop */
-  /* Adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
-  /* Style the navigation menu */
-  @media (max-width: 992px) {
-    #mobil_header {
-      display: block;
-    }
-  
-    #desktop_header {
-      display: none;
-    }
-  
-    .topnav {
-      overflow: hidden;
-      position: relative;
-    }
-  
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-      display: none;
-    }
-  
-    /* Style navigation menu links */
-    .topnav a {
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-    }
-  
-    /* Style the hamburger menu */
-    .topnav a.icon {
-      display: block;
-      position: absolute;
-      right: 100;
-      top: 0;
-    }
-  
-    /* Style the active link (or home/logo) */
-    .active {
-      background-color: white;
-    }
-  
-    .icon {
-      font-size: 3em;
-    }
+}
 
-    .active{
-        height:70px;
-        width: 100vw;
-    }
+@-webkit-keyframes sky2 {
+  0% {
+    left: 0;
+  }
 
-    
-  body{
-    background-image: url("../tema_6/images/baggrund_forside.png");
-    background-size:425%;
+  50% {
+    left: 10%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+#sun {
+  background-image: url("./images/sol.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16em;
+  height: 40%;
+  position: absolute;
+  margin-top: 20%;
+  z-index: 0;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: sol;
+  -webkit-animation-duration: 8s;
+}
+
+/* bue-animation taget fra: https://codepen.io/kaista/pen/pLKRev */
+@-webkit-keyframes sol {
+  0% {
+    left: -15%;
+  }
+
+  25% {
+    transform: translate(-40%, -40%);
+  }
+
+  50% {
+    transform: translate(-50%, -50%);
+  }
+
+  75% {
+    transform: translate(-40%, -40%);
+  }
+
+  100% {
+    left: 100%;
+    transform: translate(0%, 0%);
+  }
+}
+
+
+/* Mobil baggrund */
+@media (max-width: 992px) {
+  #background {
+    background-image: url("../tema_6/images/baggrund_forside_01.png");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  }
-  
+}
