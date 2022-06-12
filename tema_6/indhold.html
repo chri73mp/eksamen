@@ -6,15 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grundlæggende Indhold</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="generel.css" />
 </head>
 
 <body>
+    <header>
+        <!-- Desktop mobile header start -->
+        <div id="desktop_header">
+            <div class="title">
+                <h1>Christine Düring</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">FORSIDE</a>
+                    </li>
+                    <li>
+                        <a href="om.html">OM MIG</a>
+                    </li>
+                    <li>
+                        <a href="ux.html">UX</a>
+                    </li>
+                    <li>
+                        <a href="animation.html">ANIMATION</a>
+                    </li>
+                    <li>
+                        <a href="indhold.html">INDHOLD</a>
+                    </li>
+                    <li>
+                        <a href="html.html">HTML</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Desktop mobile header end -->
+
+        <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+        <div id="mobil_header">
+            <div class="topnav">
+                <a class="active">
+                </a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">FORSIDE</a>
+                    <a href="om.html">OM MIG</a>
+                    <a href="ux.html">UX</a>
+                    <a href="animation.html">ANIMATION</a>
+                    <a href="indhold.html">INDHOLD</a>
+                    <a href="html.html">HTML</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a class="icon" onclick="menuToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+    </header>
+
+    <script src="navbar.js"></script>
 
 </body>
 
