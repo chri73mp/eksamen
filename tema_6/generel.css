@@ -1,26 +1,68 @@
+/* GENEREL STYLING AF TEKST*/
+h1 {
+  font-family: roboto;
+}
+h2 {
+  font-family: roboto;
+  font-size: 1.6rem;
+  font-weight: boleder;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: roboto;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+p {
+  font-family: roboto;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#cv_list {
+  font-family: roboto;
+  font-size: 1rem;
+  margin-left: 80px;
+  line-height: 2;
+}
 .om_mig_grid {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  gap: 20px 20px;
+  column-gap: 25px;
   grid-template-areas:
     "billede1 tekst1 tekst1"
     "tekst2 tekst2 billede2";
   margin: auto;
+  margin-top: 50px;
   width: 50%;
 }
+
+#selvportraet {
+  width: 100%;
+}
 .billede1 {
-  grid-area: billede1;
+  width: 400px;
+  margin-top: 25px;
 }
 .tekst2 {
   grid-area: tekst2;
 }
 .tekst1 {
   grid-area: tekst1;
+  margin-bottom: 30px;
+}
+
+#christine_img {
+  width: 100%;
 }
 .billede2 {
-  grid-area: billede2;
+  width: 250px;
 }
 
 /* MEDIA QUERY FOR DESKTOP: @media (min-width: 992px) */
@@ -87,7 +129,7 @@ li:hover {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5rem;
 }
 
 body {
