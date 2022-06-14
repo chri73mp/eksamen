@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundlæggende HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="generel.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Desktop mobile header start -->
+        <div id="desktop_header">
+            <div class="title">
+                <h1>Christine Düring</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">FORSIDE</a>
+                    </li>
+                    <li>
+                        <a href="om.html">OM MIG</a>
+                    </li>
+                    <li>
+                        <a href="tema2.html">TEMA 2</a>
+                    </li>
+                    <li>
+                        <a href="tema3.html">TEMA 3</a>
+                    </li>
+                    <li>
+                        <a href="tema4.html">TEMA 4</a>
+                    </li>
+                    <li>
+                        <a href="tema5.html">TEMA 5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Desktop mobile header end -->
+
+        <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+        <div id="mobil_header">
+            <div class="topnav">
+                <a class="active">
+                </a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">FORSIDE</a>
+                    <a href="om.html">OM MIG</a>
+                    <a href="tema2.html">TEMA 2</a>
+                    <a href="tema3.html">TEMA 3</a>
+                    <a href="tema4.html">TEMA 4</a>
+                    <a href="tema5.html">TEMA 5</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a class="icon" onclick="menuToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+    </header>
+    <main>
+
+        <div class="tema2_container">
+            <div class="box1-1">
+                <figure>
+                    <img class="tema2_billede1" src="./images/van_gogh.webp" id="van_gogh_selvportraet"
+                        alt="van Gogh selvportræt"></img>
+                    <figcaption>Eksempel på sitets billedestil </figcaption>
+                </figure>
+            </div>
+            <div class="box2-1">
+                <h2>Tema 2 - Grundlæggende Web</h2>
+                <h2>Responsive site</h2>
+                <h3>Ide</h3>
+                <p>
+                    I dette tema blev jeg tildelt designstilen ”Retro Video Game”, som er baseret på de tidlige
+                    videospils design, herunder
+                    især 1980- og 1990erne samt starten af det nye århundrede. Det er en stil, som ofte er designet
+                    vha. pixelart og meget
+                    kantede detaljer.
+                </p>
+                <p>
+                    I første omgang valgte jeg at lave et website, der skulle omhandle Københavns historie. Dog indså
+                    jeg undervejs, at jeg
+                    måtte skifte emne, da de gamle billeder ikke kunne laves til pixelart i Photoshop. Valget faldt
+                    derfor på Vincent van
+                    Gogh, da hans malerier er i stærke farver og har motiver, som kunne forvandles til pixelart.
+                </p>
+                <p>
+                    Jeg valgte at fokusere på primært de tidlige Super Mario spil fra Nintendo, hvis design er meget
+                    pixelerede. Dog valgte
+                    jeg også at tage lidt med fra de senere versioner, som er mere farverige.
+                </p>
+                <p>
+                    Websitets farvetema er en stærk orange- samt en blå farve, som jeg valgte ud fra det billede, som
+                    jeg ville bruge som
+                    splashbillede. Dette er et maleri, hvor motivet er en blå blomsterbuket. Orange er modsat blå på
+                    farvehjulet, altså de
+                    er derfor komplementærfarver. Jeg valgte at bruge en pixeleret font fra google fonts, som hedder
+                    VT323 på mine h1- samt
+                    h2-overskrifter. Dog valgte jeg at h3-overskifterne og brødteksten, skulle være mere afdæmpede, så
+                    jeg valgte en sans
+                    serif font kaldet ”Tahoma”, for at teksten blev læsevenligt. Baggrunden på sitet valgte jeg skulle
+                    være hvid, således de
+                    farverige billeder, den pixelerede font og fontfarve fremstod tydeligt uden forstyrrelser.
+                </p>
+            </div>
+            <div class="box1-2">
+                <h3>Teknik</h3>
+                <p>
+                    Sitet er opbygget af seks HTML-filer og to CSS-filer. HTML er brugt til den grundlæggende struktur.
+                    I HTML-filerne var
+                    fokus, at få styr på de semantiske tags, herunder især at holde styr på de forskellige classes,
+                    således at stylingen i
+                    CSS kunne udføres.
+                </p>
+                <p>
+                    I CSS var der først og fremmest fokus på at få opbygget de forskellige siders grids opbygget
+                    korrekt, således de
+                    opfyldte de udleverede layoutdiagrammer. Her benyttede jeg mig primært af den viden, som jeg fik
+                    oplært gennem de mindre
+                    CSS øvelser, herunder især øvelserne ”flexercises” og ”excerccsises”.
+                </p>
+            </div>
+            <div class="box2-2">
+                <div class="tema2_billede2">
+                    <figure>
+                        <img src="./images/van_gogh_forside.webp" id="tema2_forside" alt="Sitets forside"></img>
+                        <figcaption>Sites forside</figcaption>
+                    </figure>
+                </div>
+                <div class="tema2_billede3">
+                    <img src="./images/splashbillede.jpg" id="tema2_splash" alt="Splashbillede"></img>
+                    <figcaption>Splashbillede udført i Photoshop</figcaption>
+                </div>
+            </div>
+            <div class="box1-3">
+                <div class="tema2_billede4">
+                    <figure>
+                        <img src="./images/van_gogh_site.webp" id="tema2_side5" alt="Sitets side 5"></img>
+                        <figcaption>Sitets side 5</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="box2-3">
+                <h3>Refleksioner</h3>
+                <p>
+                    Der er ting, som jeg gerne ville have gjort anderledes i den indledende proces samt af udformningen
+                    af sitet. Først og
+                    fremmest indså jeg sent i processen, at jeg måtte skifte emne, da jeg havde valgt billeder, der var
+                    for gamle til at
+                    kunne redigeres i Photoshop til designstilen og måtte derfor også finde et nyt farvetema for sitet.
+                    Derfor er billederne
+                    på side seks ikke blevet udskiftet til van Gogh malerier.
+                </p>
+                <p>
+                    Desuden havde jeg problemer med at få stylet positionen af splashbilledet i CSS, således det kunne
+                    være i HTML-koedens main tag og ikke
+                    hele body tagget, som var en del af opgaven. Rent visuelt så det bedst ud, når det blev placeret i
+                    body og
+                    ikke main. Dette kan ses på denne sides første billede.Havde der
+                    været mere tid, ville jeg have ændret på dette. Desuden ville jeg ændre på sitets menu. Den visuelle
+                    styling kunne
+                    forbedres gennem kode, således den ikke lå som en lang ”blok” i toppen, samt menupunkterne kunne
+                    være mere centrede og i
+                    en blå farve.
+                </p>
+                <p>
+                    Billederne burde også være blevet re-sized, da jpg-filerne er for store. Det gør, at sitets sider
+                    loader meget langsomt.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="navbar.js"></script>
+
+</body>
+
+</html>
