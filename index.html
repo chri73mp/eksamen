@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex" />
+
+
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body id="baggrund_forside">
+    <div id="sun"></div>
+    <div id="sky1"></div>
+    <div id="sky2"></div>
+    <div id="background">
+        <header>
+            <div class="title">
+                <h1>Christine Düring</h1>
+            </div>
+            <!-- Desktop mobile header start -->
+            <div id="desktop_header">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">FORSIDE</a>
+                        </li>
+                        <li>
+                            <a href="om.html">OM MIG</a>
+                        </li>
+                        <li>
+                            <a href="tema2.html">TEMA 2</a>
+                        </li>
+                        <li>
+                            <a href="tema3.html">TEMA 3</a>
+                        </li>
+                        <li>
+                            <a href="tema4.html">TEMA 4</a>
+                        </li>
+                        <li>
+                            <a href="tema5.html">TEMA 5</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Desktop mobile header end -->
+
+            <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+            <div id="mobil_header">
+                <div class="topnav">
+                    <a class="active">
+                    </a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="index.html">FORSIDE</a>
+                        <a href="om.html">OM MIG</a>
+                        <a href="tema2.html">TEMA 2</a>
+                        <a href="tema3.html">TEMA 3</a>
+                        <a href="tema4.html">TEMA 4</a>
+                        <a href="tema5.html">TEMA 5</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a class="icon" onclick="menuToggle()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile menu end -->
+        </header>
+
+
+        <div id="christine_figur"></div>
+        <div id="ellie_figur"></div>
+
+    </div>
+
+    <script src="navbar.js"></script>
+</body>
+
+</html>
