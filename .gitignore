@@ -1,0 +1,7 @@
+video/
+*.mp4
+*.mov
+*.MOV
+
+.DS_Store
+
