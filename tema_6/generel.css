@@ -5,7 +5,7 @@ h1 {
 h2 {
   font-family: roboto;
   font-size: 1.6rem;
-  font-weight: boleder;
+  font-weight: bolder;
   line-height: 2;
   margin-bottom: 10px;
 }
@@ -160,7 +160,6 @@ body {
   .topnav a.icon {
     display: block;
     position: absolute;
-    right: 100;
     top: 0;
   }
 
