@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Værker</title>
+  <link rel="stylesheet" href="styles/mutual_styles.css" />
+  <link rel="stylesheet" href="styles/vaerker.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon-ND.svg" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <!-- Desktop mobile header start -->
+      <div id="desktop_header">
+        <a href="index.html" class="logo">
+          <img src="images/underskrift.webp" alt="logo" />
+          <h1>Naja Duarte</h1>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Forside</a>
+            </li>
+            <li>
+              <a href="vaerker.html">Værker</a>
+            </li>
+            <li>
+              <a href="om.html">Om mig</a>
+            </li>
+            <li>
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Desktop mobile header end -->
+
+      <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+      <div id="mobil_header">
+        <div class="topnav">
+          <a onclick="menuToggle()" class="active"><img src="images/underskrift.webp" alt="logo" id="logo" />
+          </a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="index.html">Forside</a>
+            <a href="vaerker.html">Værker</a>
+            <a href="om.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a class="icon" onclick="menuToggle()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Mobile menu end -->
+    </header>
+    <div>
+      <h1>Portrætter</h1>
+    </div>
+
+    <div class="grid_1-1-1">
+      <div class="flex-col">
+        <img class="image" src="portraeter/well-wisher.jpg" alt="portræt" />
+        <h4>
+          Well-Wisher <br />
+          Akryl på lærred <br />
+          90 x 120 cm. <br />
+          Pris 13.000,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS <br />
+          GALLERI ART EXPO <br />
+          SØVEJEN 35 <br />
+          8362 HØRNING <br />
+          TLF: 86147796
+        </h5>
+      </div>
+
+      <div class="flex-col">
+        <img class="image" src="portraeter/imagine.jpg" alt="portræt" />
+        <h4>
+          Imagine <br />
+          Akryl på lærred <br />
+          70 x 100 cm.<br />
+          Pris 8000,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS <br />
+          GALLERI ART EXPO <br />
+          SØVEJEN 35 <br />
+          8362 HØRNIG <br />
+          TLF. 86147796
+        </h5>
+      </div>
+
+      <div class="flex-col">
+        <img class="image" src="portraeter/nonverbal.jpg" alt="portræt" />
+        <h4>
+          Nonverbal conversation <br />
+          Akryl på lærred<br />
+          100 x 140 cm.<br />
+          Pris 16.800,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS<br />
+          KUNSTGALLERIET ODENSE <br />
+          SØNDERGADE 3<br />
+          5000 ODENSE C<br />
+          TLF.: 65 91 08 85 / 30 52 60 58
+        </h5>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/the-observer.jpg" alt="portræt" />
+        <h4>
+          The observer<br />
+          Akryl på lærred<br />
+          90 x 700 cm.<br />
+          Pris 7.600,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS <br />
+          GALLERI ART EXPO <br />
+          SØVEJEN 35 <br />
+          8362 HØRNIG <br />
+          TLF. 86147796
+        </h5>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/alt-taget-i-betragtning.jpg" alt="portræt" />
+        <h4>
+          Alt taget i betragtning<br />
+          Akryl på lærred<br />
+          100 x 100 cm.<br />
+          Pris 12.000,-<br />
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS <br />
+          GALLERI ART EXPO <br />
+          SØVEJEN 35 <br />
+          8362 HØRNIG <br />
+          TLF. 86147796
+        </h5>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/viewpoint.jpg" alt="portræt" />
+        <h4>
+          Viewpoint<br />
+          Akryl på lærred<br />
+          90 x 70 cm.<br />
+          Pris 7.600,-
+        </h4>
+        <h5>
+          MALERIET KAN SES FRA D. 26.03.22 HOS<br />
+          GALLERI HIMMERLAND <br />
+          GATTENVEJ 85 <br />
+          9640 FARSØ <br />
+          TLF. 40 56 72 56 / 22 23 62 69
+        </h5>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/the-bodyguard.jpg" alt="portræt" />
+        <h4>
+          The Bodyguard <br />
+          Akryl på lærred<br />
+          100 x 100 cm.<br />
+          Pris 12.000,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS<br />
+          KUNSTGALLERIET ODENSE <br />
+          SØNDERGADE 3<br />
+          5000 ODENSE C<br />
+          TLF.: 65 91 08 85 / 30 52 60 58
+        </h5>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/among-leaves.jpg" alt="portræt" />
+        <h4>
+          Among leaves <br />
+          Akryl på lærred <br />
+          140 x 100 cm. <br />
+          Pris 16.800,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS<br />
+          KUNSTGALLERIET ODENSE <br />
+          SØNDERGADE 3<br />
+          5000 ODENSE C<br />
+          TLF.: 65 91 08 85 / 30 52 60 58
+        </h5>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/the-gatekeeper.jpg" alt="portræt" />
+        <h4>
+          The Gatekeeper<br />
+          Akryl på lærred<br />
+          100 x 140 cm.<br />
+          Pris 16.800,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS<br />
+          KUNSTGALLERIET ODENSE <br />
+          SØNDERGADE 3<br />
+          5000 ODENSE C<br />
+          TLF.: 65 91 08 85 / 30 52 60 58
+        </h5>
+      </div>
+
+      <div class="flex-col">
+        <img class="image" src="portraeter/hvor-mon-den.jpg" alt="portræt" />
+        <h4>
+          Hvor mon den er... den røde tråd<br />
+          Akryl på lærred<br />
+          100 x 120 cm<br />
+          Pris 14.400,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS<br />
+          KUNSTGALLERIET ODENSE <br />
+          SØNDERGADE 3<br />
+          5000 ODENSE C<br />
+          TLF.: 65 91 08 85 / 30 52 60 58
+        </h5>
+      </div>
+
+      <div class="flex-col">
+        <img class="image" src="portraeter/nobody-knows.jpg" alt="portræt" />
+        <h4>
+          Nobody knows<br />
+          Akryl på lærred<br />
+          70 x 90 cm.<br />
+          Pris 7.600,-
+        </h4>
+      </div>
+      <div class="flex-col">
+        <img class="image" src="portraeter/forbindelse.jpg" alt="portræt" />
+        <h4>
+          Forbindelse<br />
+          Akryl på lærred<br />
+          90 x 70 cm.<br />
+          Pris 7.600,-
+        </h4>
+        <h5>
+          MALERIET KAN SES HOS<br />
+          KUNSTGALLERIET ODENSE <br />
+          SØNDERGADE 3<br />
+          5000 ODENSE C<br />
+          TLF.: 65 91 08 85 / 30 52 60 58
+        </h5>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Naja Duarte <br />
+    Tlf.: 51 52 75 29 <br />
+    Mail: naja_duarte@hotmail.com <br />
+    Copyright: Naja Duarte
+  </footer>
+
+  <script src="javascript/burgermenu.js"></script>
+</body>
+
+</html>

@@ -28,44 +28,34 @@ p {
   margin-left: 80px;
   line-height: 2;
 }
-.om_mig_grid {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px 20px;
-  column-gap: 25px;
-  grid-template-areas:
-    "billede1 tekst1 tekst1"
-    "tekst2 tekst2 billede2";
-  margin: auto;
-  margin-top: 50px;
-  width: 50%;
+
+figcaption {
+  font-family: roboto;
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgb(61, 60, 60);
+  margin-bottom: 10px;
 }
 
-#selvportraet {
-  width: 100%;
-}
-.billede1 {
-  width: 400px;
-  margin-top: 25px;
-}
-.tekst2 {
-  grid-area: tekst2;
-}
-.tekst1 {
-  grid-area: tekst1;
-  margin-bottom: 30px;
-}
-
-#christine_img {
-  width: 100%;
-}
-.billede2 {
-  width: 250px;
+button {
+  font-family: roboto;
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(61, 60, 60);
+  background-color: lightcyan;
+  border: 2px solid lightslategray;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+  margin-left: 10px;
 }
 
-/* MEDIA QUERY FOR DESKTOP: @media (min-width: 992px) */
+button:hover {
+  background-color: rgb(245, 255, 255);
+  font-weight: 800;
+  transform: translate(0px, 2px);
+}
 
 * {
   all: unset;
@@ -113,11 +103,11 @@ a {
   color: rgb(61, 60, 60);
 }
 
-nav li {
+#desktop_header li {
   background-color: lightcyan;
 }
 
-li:hover {
+#desktop_header li:hover {
   background-color: rgb(245, 255, 255);
   font-weight: 800;
   transform: translate(0px, 2px);
@@ -174,13 +164,14 @@ body {
     top: 0;
   }
 
-  /* Style the active link (or home/logo) */
-  .active {
+  #myLinks a {
     background-color: white;
+    width: 120px;
   }
 
   .icon {
     font-size: 3em;
+    background-color: white;
   }
 
   .active {

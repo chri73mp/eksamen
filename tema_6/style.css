@@ -1,6 +1,7 @@
 #baggrund_forside {
   background-color: #8acaf2;
   animation: dagnat 8s infinite;
+  overflow: hidden;
 }
 
 @keyframes dagnat {
@@ -45,6 +46,8 @@
   position: absolute;
   margin-top: 20%;
   margin-left: 10%;
+  bottom: 0;
+  left: 0;
 }
 
 #christine_figur:hover {
@@ -60,6 +63,8 @@
   position: absolute;
   margin-top: 25%;
   margin-left: 20%;
+  bottom: 0;
+  left: 0;
 }
 
 #ellie_figur:hover {
@@ -76,11 +81,14 @@
   position: absolute;
   z-index: -1;
   -webkit-animation: linear infinite;
+  animation: linear infinite;
 }
 
 #sky1 {
   -webkit-animation-name: sky1;
   -webkit-animation-duration: 22s;
+  animation-name: sky1;
+  animation-duration: 22s;
   margin-top: 25%;
   margin-left: 50%;
 }
@@ -88,6 +96,8 @@
 #sky2 {
   -webkit-animation-name: sky2;
   -webkit-animation-duration: 16s;
+  animation-name: sky2;
+  animation-duration: 16s;
   margin-top: 25%;
   margin-left: 10%;
   -webkit-transform: scaleX(-1);
@@ -95,7 +105,7 @@
 }
 
 /* Venstre højre anim taget fra: https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
-@-webkit-keyframes sky1 {
+@keyframes sky1 {
   0% {
     left: 0;
   }
@@ -109,7 +119,7 @@
   }
 }
 
-@-webkit-keyframes sky2 {
+@keyframes sky2 {
   0% {
     left: 0;
   }
@@ -135,10 +145,13 @@
   -webkit-animation: linear infinite;
   -webkit-animation-name: sol;
   -webkit-animation-duration: 8s;
+  animation: linear infinite;
+  animation-name: sol;
+  animation-duration: 8s;
 }
 
 /* bue-animation taget fra: https://codepen.io/kaista/pen/pLKRev */
-@-webkit-keyframes sol {
+@keyframes sol {
   0% {
     left: -15%;
   }
@@ -161,7 +174,7 @@
   }
 }
 
-/* Mobil baggrund */
+/* Mobil layout */
 @media (max-width: 992px) {
   #background {
     background-image: url("../tema_6/images/baggrund_forside_01.png");
@@ -169,42 +182,125 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  body {
+    margin: 10px;
+  }
+}
+
+/* Desktop grids */
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "box1-1 box2-1"
+      "box1-2 box2-2"
+      "box1-3 box2-3";
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+  }
+
+  /* Om mig side */
+  .om_mig_grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    column-gap: 25px;
+    grid-template-areas:
+      "billede1 tekst1 tekst1"
+      "tekst2 tekst2 billede2";
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+  }
+
+  .grid_tema5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid2box1-1 grid2box1-2"
+      "grid2box2-2 grid2box2-2";
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "grid3box1-1 grid3box2-1"
+      "grid3box1-2 grid3box2-2";
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+  }
+  .grid3box1-2 {
+    grid-area: grid3box1-2;
+  }
+  .grid3box2-2 {
+    grid-area: grid3box2-2;
+  }
+  .grid3box2-1 {
+    grid-area: grid3box2-1;
+  }
+  .grid3box1-1 {
+    grid-area: grid3box1-1;
+  }
+}
+
+#selvportraet {
+  width: 100%;
+}
+.billede1 {
+  width: 400px;
+  margin-top: 25px;
+}
+.tekst2 {
+  grid-area: tekst2;
+}
+.tekst1 {
+  grid-area: tekst1;
+  margin-bottom: 30px;
+}
+
+#christine_img {
+  width: 100%;
+}
+.billede2 {
+  width: 250px;
 }
 
 /* Tema 2 - introside */
-.tema2_container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 20px 20px;
-  margin-left: 200px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "box1-1 box2-1"
-    "box1-2 box2-2"
-    "box1-3 box2-3";
+.container img {
+  width: 100%;
 }
-
 .box1-1 {
   grid-area: box1-1;
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 2;
-}
-
-.tema2_billede1 {
-  width: 500px;
 }
 
 .box2-1 {
   grid-area: box2-1;
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 1;
-  margin-right: 100px;
+  display: inline-block;
+  max-width: 450px;
 }
 
 .box1-2 {
   grid-area: box1-2;
+  max-width: 450px;
+  padding-top: 100px;
 }
 
 .box2-2 {
@@ -217,4 +313,64 @@
 
 .box2-3 {
   grid-area: box2-3;
+}
+
+/* SYLING AF TEMA 2 BILLEDER */
+#van_gogh_selvportraet {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 2px 3px 10px rgb(77, 71, 71);
+}
+
+#tema2_forside {
+  width: 500px;
+  box-shadow: 2px 3px 10px rgb(77, 71, 71);
+  margin-top: 20px;
+}
+
+#tema2_splash {
+  width: 500px;
+  box-shadow: 2px 3px 10px rgb(77, 71, 71);
+}
+
+#tema2_side5 {
+  width: 500px;
+  box-shadow: 2px 3px 10px rgb(77, 71, 71);
+}
+
+#tema3_tekst1 {
+  padding-left: 10px;
+}
+
+#ux-photoshop_billede {
+  width: 500px;
+  justify-content: auto;
+}
+#tema3_sketch {
+  width: 700px;
+}
+
+.grid2box1-1 {
+  grid-area: grid2box1-1;
+}
+
+.grid2box2-2 {
+  grid-area: grid2box2-2;
+}
+
+.grid2box1-2 {
+  grid-area: grid2box1-2;
+}
+
+.sidetitel {
+  text-align: center;
+  margin: auto;
+}
+
+#pilot_plakat {
+  width: 100%;
+}
+
+video {
+  width: 100%;
 }

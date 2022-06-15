@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="styles/kontakt.css" />
+  <link rel="stylesheet" href="styles/mutual_styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon-ND.svg" />
+  <meta name="robots" content="noindex" />
+</head>
+
+<body>
+  <header>
+    <!-- Desktop mobile header start -->
+    <div id="desktop_header">
+      <a href="index.html" class="logo">
+        <img src="images/underskrift.webp" alt="logo" />
+        <h1>Naja Duarte</h1>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Forside</a>
+          </li>
+          <li>
+            <a href="vaerker.html">Værker</a>
+          </li>
+          <li>
+            <a href="om.html">Om mig</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Desktop mobile header end -->
+
+    <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+    <div id="mobil_header">
+      <div class="topnav">
+        <a onclick="menuToggle()" class="active"><img src="images/underskrift.webp" alt="logo" id="logo" />
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="index.html">Forside</a>
+          <a href="vaerker.html">Værker</a>
+          <a href="om.html">Om mig</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="icon" onclick="menuToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Mobile menu end -->
+  </header>
+
+  <main class="container">
+    <div class="billede order">
+      <img class="billede" src="images/naja_1.JPG" alt="test" />
+    </div>
+
+    <div class="tekst">
+      <h2>Kontakt mig</h2>
+      <p>
+        Du er altid velkommen til at besøge mig i <br />
+        mit Atelier efter forudgående aftale
+      </p>
+
+      <p>
+        Adr.: <br />
+        Dalbyvej 6, NR. Dalby, <br />
+        4140 Borup (Sjælland)
+      </p>
+
+      <p>Kontakt mig via:</p>
+      <ul class="en">
+        <li>Telefon: 51 52 75 29</li>
+        <li>Mail: naja_duarte@hotmail.com</li>
+      </ul>
+
+      <p>Sociale Medier:</p>
+      <ul class="to">
+        <li>Facebook: Art by Naja Duarte</li>
+        <li>Instagram: najaduarte</li>
+      </ul>
+
+      <p>Cvr nr.: 19018199</p>
+    </div>
+  </main>
+
+  <div id="ikoner">
+    <div id="facebook/instagram">
+      <div id="ikon_1"><img src="svg/facebook.svg" alt="ikon_1" /></div>
+      <div id="ikon_2"><img src="svg/instagram.svg" alt="ikon_2" /></div>
+    </div>
+  </div>
+
+  <footer>
+    Naja Duarte <br />
+    Tlf.: 51 52 75 29 <br />
+    Mail: naja_duarte@hotmail.com <br />
+    Copyright: Naja Duarte
+  </footer>
+
+  <script src="javascript/burgermenu.js"></script>
+</body>
+
+</html>
