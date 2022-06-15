@@ -315,27 +315,23 @@
   grid-area: box2-3;
 }
 
-/* SYLING AF TEMA 2 BILLEDER */
+/* SYLING AF BILLEDER */
 #van_gogh_selvportraet {
   width: 100%;
   margin-top: 20px;
-  box-shadow: 2px 3px 10px rgb(77, 71, 71);
 }
 
 #tema2_forside {
   width: 500px;
-  box-shadow: 2px 3px 10px rgb(77, 71, 71);
   margin-top: 20px;
 }
 
 #tema2_splash {
   width: 500px;
-  box-shadow: 2px 3px 10px rgb(77, 71, 71);
 }
 
 #tema2_side5 {
   width: 500px;
-  box-shadow: 2px 3px 10px rgb(77, 71, 71);
 }
 
 #tema3_tekst1 {
